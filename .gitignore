@@ -1,4 +1,4 @@
 slackbot/plugins/firebaseAccountCredentials.json
 slackbot/plugins/firebaseint.py
-/slackbot_settings.py
+slackbot_settings.py
 *.pyc
