@@ -6,7 +6,7 @@ from slackbot.bot import listen_to
 
 @respond_to('hello$', re.IGNORECASE)
 def hello_reply(message):
-    message.reply('hello sender!')
+    message.reply('yo yo yo!')
 
 
 @respond_to('^reply_webapi$')

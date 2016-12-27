@@ -1,5 +1,6 @@
-API_TOKEN = 'xoxb-118584443618-OLqfOfErglOGQ9X8KM6kRKYF'
+API_TOKEN = 'xoxb-120343957617-ThwdH75DCD0wZ0R8j7Uy47Z0'
 DEFAULT_REPLY = "Sorry I can't understand"
 PLUGINS = [
     'slackbot.plugins'
 ]
+

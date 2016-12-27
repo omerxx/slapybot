@@ -1,7 +1,5 @@
 from slackbot.bot import respond_to
 import logging
-import pickle
-import os
 from firebaseint import initiate_db
 import time
 

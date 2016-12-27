@@ -6,7 +6,6 @@ from firebaseint import initiate_db
 
 logger = logging.getLogger(__name__)
 
-environments = ['stg', 'prod']
 db = initiate_db()
 
 
@@ -84,9 +83,8 @@ def list_locks(message):
 
 @respond_to('^list locks by (.*)')
 def list_locks(message, user):
-	for i, loc in enumerate(locks):
-		if locks[loc].get('user', None) == user:
-			message.send('{} locked deployment of {} to {}'.format(user, loc[0], loc[1]))
-		else:
-			logger.info(locks[loc])
+	for lock in db.child("locks").get().each():
+		if lock.key() != 'default':
+			if lock.val()['user'] == user:
+				message.send('*{}* was locked by {} on *{}*'.format(lock.key(), lock.val()['user'], lock.val()['time']))
 
