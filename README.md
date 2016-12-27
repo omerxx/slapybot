@@ -66,12 +66,14 @@ PLUGINS = [
 
 Now you can talk to your bot in your slack client!
 
-##### Use:
+## Try it out:
 
 ```
 @<BOT-NAME> wiki
 @<BOT-NAME> random gif
 @<BOT-NAME> <SOME-WORD> me
 @<BOT-NAME> Whats the weather in london?
-
+@<BOT-NAME> Get 2 news from CNN
+@<BOT-NAME> Get news sources
+@<BOT-NAME> Get news sources
 ```
