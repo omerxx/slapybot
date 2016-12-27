@@ -10,12 +10,20 @@ Slapybot uses firebase for storing data (using [thisbejim/Pyrebase](https://gith
 
 ## Installation
 
-
 ```
 pip install -r requirements.txt
 ```
 
 ## Usage
+
+### Create firebase configuration
+1. Go to your firebase project url (https://console.firebase.google.com/project/<PROJECT-NAME>)
+2. Overview > Project Settings > Service Accounts (tab) > GENERATE NEW PRIVATE KEY
+3. Download the json file and save it in your project (Make sure to add it to .gitignore file!!!)
+
+### Create firebase configuration
+1. Create firebase.py in /plugins directory
+2. 
 
 ### Generate the slack api token
 
