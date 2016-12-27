@@ -75,5 +75,13 @@ Now you can talk to your bot in your slack client!
 @<BOT-NAME> Whats the weather in london?
 @<BOT-NAME> Get 2 news from CNN
 @<BOT-NAME> Get news sources
-@<BOT-NAME> Get news sources
+@<BOT-NAME> deploy <SERVICE>
+@<BOT-NAME> lock <SERVICE>
+@<BOT-NAME> list locks
+@<BOT-NAME> list services
+@<BOT-NAME> add service <SERVICE-NAME>
+@<BOT-NAME> unlock <SERVICE>
+@<BOT-NAME> unlock all
+
+
 ```
