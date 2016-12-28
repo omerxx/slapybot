@@ -26,7 +26,7 @@ def gif(message):
 	message.send(data['data'].get('image_original_url'))
 
 
-@respond_to('^(.*) me')
+@respond_to('^gif of (.*)')
 def gifme(message, keyword):
 	data = {}
 	while not data.get('data'):

@@ -1,12 +1,14 @@
 [![PyPI](https://badge.fury.io/py/slackbot.svg)](https://pypi.python.org/pypi/slackbot) [![Build Status](https://secure.travis-ci.org/lins05/slackbot.svg?branch=master)](http://travis-ci.org/lins05/slackbot)
 
-A CHAT-OPS python chat bot for [Slack](https://slack.com) based on [lins05/slackbot](https://github.com/lins05/slackbot)
-Slapybot uses firebase for storing data (using [thisbejim/Pyrebase](https://github.com/thisbejim/Pyrebase))
+A CHAT-OPS python chat bot for [Slack](https://slack.com) based on [lins05/slackbot](https://github.com/lins05/slackbot).
+Slapybot uses [thisbejim/Pyrebase](https://github.com/thisbejim/Pyrebase)) for firebase integration, 
+and handles smalltalk using [API.AI](http://api.ai) with the help of its [python sdk](https://github.com/api-ai/api-ai-python)
 
 ## Features
 
 * ChatOps ready - with deployment system, locking mechanism and more
 * Weather, news, wiki, gifs and many more queries
+* Small talk questions and answers with API.AI integration
 
 ## Installation
 
