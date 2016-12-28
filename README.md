@@ -92,6 +92,16 @@ Now you can talk to your bot in your slack client!
 @<BOT-NAME> add service <SERVICE-NAME>
 @<BOT-NAME> unlock <SERVICE>
 @<BOT-NAME> unlock all
-
+```
+## And some easter eggs:
 
 ```
+@<BOT-NAME> Do you know what does the fox say?
+@<BOT-NAME> Who is donald trump?
+@<BOT-NAME> What is the meaning of life?
+@<BOT-NAME> How many woods would a wood chuck chuck
+
+ ```
+
+
+
