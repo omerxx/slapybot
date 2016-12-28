@@ -1,4 +1,4 @@
-from slackbot.bot import respond_to, listen_to
+from slackbot.bot import respond_to, listen_to, default_reply
 import requests
 
 
@@ -39,3 +39,5 @@ def gifme(message, keyword):
 def wiki(message):
 	title = requests.get('https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&grnlimit=1').json()['query']['pages'].values()[0]['title']
 	message.reply(u'https://en.wikipedia.org/wiki/{}'.format('_'.join(title.split())))
+
+

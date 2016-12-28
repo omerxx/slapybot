@@ -8,6 +8,9 @@ API_KEY = weather_api_key()
 @respond_to('weather in (.*)')
 def weather_in(message, location):
 	status = requests.get('http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={}'.format(location, API_KEY)).json()
+	if '200' not in str(status['cod']):
+		message.send(status.get('message'))
+		return
 	city = status.get('name')
 	weather_title = status.get('weather')[0].get('main')
 	weather_desc = status.get('weather')[0].get('description')
@@ -17,7 +20,7 @@ def weather_in(message, location):
 	temp_max = status.get('main').get('temp_max')
 	wind_speed = status.get('wind').get('speed')
 
-	message.reply('{}: {} ({}), temprature is {} degrees celsius (ranges between {} to {})\n wind speed is {} kmh'
+	message.reply(u'{}: {} ({}), temprature is {} degrees celsius (ranges between {} to {})\n wind speed is {} kmh'
 	              .format(city, weather_title, weather_desc, temp, temp_min, temp_max, wind_speed))
 
 
